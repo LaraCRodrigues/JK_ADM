@@ -1,0 +1,190 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.barra-lateral {
+  width: 220px;
+  height: 200vh;
+    background: linear-gradient(180deg, #3f51b5 0%, #e91e63 100%);
+  color: white;
+  padding: 20px;
+  left: 0;
+  top: 0;
+}
+
+.barra-lateral h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.barra-lateral ul {
+  list-style: none;
+}
+
+.barra-lateral ul li {
+  margin: 15px 0;
+}
+
+.barra-lateral ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+/* 
+.barra-lateral ul li a:hover {
+  background-color: #007bff;
+  
+} */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f9f9f9;
+    margin: 0;
+    height: 100vh;
+}
+
+
+
+.alterar-tema {
+    background-color: #03a9f4;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1 {
+    color: #2196F3;
+}
+
+.client-message {
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+.message-info {
+    color: green;
+}
+
+.separacao {
+    margin: 20px 0;
+  margin-top: 100px;
+  }
+  .filtro-mensagens select {
+    margin-top: 100px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+.filtro-mensagens select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* manupulacao javascript */
+body.claro {
+    background-color: #f4f4f4;
+    color: #000;
+  }
+
+
+  body.escuro {
+    background-color: #121212;
+    color: #a89d9d;
+  }
+
+  body.escuro label,
+  body.escuro h3 {
+    color: black;
+  }
+
+  .botao-tema {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+  }
+
+  .botao-tema:hover {
+    background-color: #0056b3;
+  }
+
+  body.escuro .botao-tema {
+    background-color: #333;
+  }
+
+  body.escuro .botao-tema:hover {
+    background-color: #555;
+  }
+.conteudo {
+  padding: 20px;
+}
+
+.atalhos {
+  display: flex;
+  gap: 20px;
+}
+
+/* Centraliza os atalhos no mobile */
+@media (max-width: 768px) {
+  .conteudo {
+    text-align: center;
+  }
+
+  .atalhos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .atalho {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Estilo para os atalhos */
+.conteudo {
+  padding: 20px;
+}
+
+.atalhos {
+  display: flex;
+  gap: 20px;
+}
+
+ /* media queries */
+@media (max-width: 768px) {
+  .barra-lateral {
+   display: none;
+  }
+
+  .conteudo_form {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

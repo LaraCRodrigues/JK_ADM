@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Painel - Gerenciamento de Pedidos</title>
+    <link rel="stylesheet" href="gerenciamento.css">
+    <link rel="stylesheet" href="introducao.css">
+</head>
+<body>
+    <div class="barra-lateral">
+        <h2>Meu Painel</h2>
+         <ul>
+      <li><a href="index.html">🏠 Início</a></li>
+      <li><a href="Gerenciamento.html">📦 Gerenciamento</a></li>
+    </ul>
+    <!-- <button class="botao-tema" id="alternar-tema">Alternar Tema Claro/Escuro</button> -->
+    </div>
+    
+    <div class="main-content">
+        <h1>Mensagens</h1>
+        <p>Área de conversa com cliente e administrador</p>
+       
+        <div class="filtro-mensagens">
+            <select id="filtro">
+                <option value="todos">Todos</option>
+                <option value="clientes">Mais recentes</option>
+            </select>
+        </div>
+        <div class="client-message highlight">
+            <div class="client-name">Nome cliente 1</div>
+            <div class="message-info"> <a href="MensagensGeren.html">Nova mensagem recebida + 3</a></div>
+        </div>
+        <div class="client-message">
+            <div class="client-name">Nome cliente 2</div>
+            <div class="message-info"> <a href="MensagensGeren.html">Nova mensagem recebida + 3</a></div>
+        </div>
+
+       
+        <div class="separacao">
+          
+        <h1>Pedidos</h1>
+        <p>Festas marcadas e agendadas</p>
+        <div class="client-message highlight">
+            <div class="client-name">Sem Pedidos  </div>
+            <div class="message-info"> <a href="pedidos.html">Nenhum pedido...</a></div>
+        </div>
+     
+        </div>
+    </div>
+     
+  <script>
+    
+    const botaoTema = document.getElementById('alternar-tema');
+    const body = document.body;
+
+    botaoTema.addEventListener('click', () => {
+      body.classList.toggle('escuro');
+      body.classList.toggle('claro');
+    });
+  </script>
+</body>
+</html>
