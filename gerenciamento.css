@@ -6,7 +6,7 @@
 }
 .barra-lateral {
   width: 220px;
-  height: 200vh;
+  /* height: 200vh; */
     background: linear-gradient(180deg, #3f51b5 0%, #e91e63 100%);
   color: white;
   padding: 20px;
